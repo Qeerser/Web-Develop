@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity7</title>
+    <link rel="stylesheet" href="Style CEE.css">
+</head>
+
+<body class="">
+    <script src="Activity7_files/index.js"></script>
+    <h1 id="app-name">ฝากซื้อด้วย</h1>
+    <h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2>
+    <p class="section-subtitle">ชื่อคนในกลุ่มที่มาร่วมทำวันนี้</p>
+    <ul id="member-list">
+        <li>Kanpasit Pothebungkarn</li>
+        <li>Korn Surapat</li>
+        <li>Naphat Khoprasertthaworn</li>
+        <li>Yossawat Ongudomluk</li>
+    </ul>
+    <br>
+    <h2 class="section-title">รายการที่ฝากซื้อ</h2>
+    <table id="main-table">
+        <thead>
+            <tr>
+                <th>ของที่ฝากซื้อ</th>
+                <th>ชื่อผู้ฝาก</th>
+                <th>ราคา(บาท)</th>
+                <th>ดำเนินการ</th>
+            </tr>
+        </thead>
+
+        <tbody><tr>
+            <td>โค้กส้ม (ขวด)</td>
+            <td>Kanpasit Pothebungkarn</td>
+            <td>18.0</td>
+            <td><button onclick="deleteRow(this)" class="delete-row" type="button"> ลบ </button></td>
+        </tr>
+        
+        <tr>
+            <td class="section">ข้าวผัดปู (เวฟด้วย)</td>
+            <td>Korn Surapat</td>
+            <td>45.0</td>
+            <td><button onclick="deleteRow(this)" class="delete-row" type="button"> ลบ </button></td>
+        </tr>
+        
+        <tr>
+            <td>ปูอัดแพ๊คเล็ก</td>
+            <td>Naphat Khoprasertthaworn</td>
+            <td>40.0</td>
+            <td><button onclick="deleteRow(this)" class="delete-row" type="button">ลบ</button></td>
+        </tr>
+
+        <tr>
+            <td>น้ำทิพย์ (เอาขวดไม่ยวบยาบ)</td>
+            <td>Yossawat Ongudomluk</td>
+            <td>7.0</td>
+            <td><button onclick="deleteRow(this)" class="delete-row" type="" button="">ลบ</button></td>
+        </tr>
+        
+        <tr>
+            <td>C-Vit มะนาว</td>
+            <td>Kanpasit Pothebungkarn</td>
+            <td>15.5</td>
+            <td><button onclick="deleteRow(this)" class="delete-row" type="button">ลบ</button></td>
+        </tr>
+
+        <tr>
+            <td>
+                <input id="item-to-add" type="text">
+            </td>
+            <td>
+                <select id="name-to-add" required="">
+                    <option selected="selected"> -- เลือกผู้ฝากซื้อ -- </option>
+                    <option>Kanpasit Pothebungkarn</option>
+                    <option>Korn Surapat</option>
+                    <option>Naphat Khoprasertthaworn</option>
+                    <option>Yossawat Ongudomluk</option>
+                </select>
+            </td>
+            <td>
+                <input id="price-to-add" type="text">
+            </td>
+            <td><button id="add-newrow" type="button" onclick="addRow()"> เพิ่ม </button></td>
+        </tr>
+    </tbody></table>
+
+
+</body></html>

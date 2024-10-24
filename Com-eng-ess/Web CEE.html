@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฝากซื้อด้วย</title>
+    <link rel="stylesheet" href="Style CEE.css">
+</head>
+<body>
+    <h1 id="app-name">ฝากซื้อด้วย</h1>
+    <h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2>
+
+    <p class="section-subtitle">(ชื่อคนในกลุ่มที่มาร่วมทำวันนี้)</p>
+    <ul id="member-list">
+        <li>อติวงศ์ สุชาโต</li>
+        <li>โปรดปราน บุณยพุกกณะ</li>
+        <li>ณัฐวุฒิ หนูไฟโรจน์</li>
+    </ul>
+    
+    <h2 class="section-subtitle">รายการฝากซื้อ</h2>
+        
+    <table id="main-table">
+        <thead>
+            <th>ของที่ฝากซื้อ</th>
+            <th>ชื่อผู้ฝากซื้อ</th>
+            <th>ราคา(บาท)</th>
+            <th>ดำเนินการ</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>โค้กส้ม(ขวด)</td>
+            <td>อติวงศ์ สุชาโต</td>
+            <td>18.0</td>
+            <td><button class="delete-row">ลบ</button></td>
+        </tr>
+         <tr>
+            <td>ข้าวผัดปู(เวฟด้วย)</td>
+            <td>ณัฐวุฒิ หนูไฟโรจน์</td>
+            <td>45.0</td>
+            <td><button class="delete-row">ลบ</button></td>
+        </tr>
+        <tr>
+            <td>ปูอัดแพ็คเล็ก</td>
+            <td>โปรดปราน บุณยพุกกณะ</td>
+            <td>40.0</td>
+            <td><button class="delete-row">ลบ</button></td>
+        </tr>
+        <tr>
+            <td>น้ำทิพย์(เอาขวดไม่ยวบยาบ)</td>
+            <td>ณัฐวุฒิ หนูไฟโรจน์</td>
+            <td>7.0</td>
+            <td><button class="delete-row">ลบ</button></td>
+        </tr>
+        <tr>
+            <td>C-Vitt มะนาว</td>
+            <td>ณัฐวุฒิ หนูไฟโรจน์</td>
+            <td>15.50</td>
+            <td><button class="delete-row">ลบ</button></td>
+        </tr>
+        <tr>
+            <td>
+                <input id="item-to-add" type="text">
+            </td>
+            <td>
+                <select id="name-to-add" required="">
+                    <option>--เลือกผู้ฝากซื้อ-- </option>
+                    <option>อติวงศ์ สุชาโต </option>
+                    <option>โปรดปราน บุณยพุกกณะ </option>
+                    <option>ณัฐวุฒิ หนูไฟโรจน์  </option>
+                </select>
+            </td>
+            <td>
+                <input id="price-to-add" type="text">
+            </td>
+            <td><button id="add-newrow" type="button" onclick="addRow()"> เพิ่ม </button></td>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
