@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Form</title>
+    <link rel="icon" type="image/x-icon" href="turtle.png">
     <link rel="stylesheet" href="index.css">
+    
   </head>
   <body>
-    
+    <a href="user.html"> User management</a>
     <div class="container">
       <h1 class="header">Register Form</h1>
       <div class="flex form-input">
@@ -27,7 +29,7 @@
         <fieldset>
           <legend>Gender</legend>
           <div class="select">
-            <input type="radio" name="gender" id="male" checked="true" value="male"/>
+            <input type="radio" name="gender" id="male" value="male"/>
             <label for="male">Male</label>
           </div>
           <div class="select">
@@ -68,10 +70,13 @@
       <div class="center form-input" style="display: none">
         <a href="http://google">Term and Condition</a>
       </div>
+      <div id="message" class="center message">
+      </div>
       <div class="center form-input">
         <button onclick="submitData()" class="button">Submit</button>
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script src="index.js"></script>
     </div>
   </body>

@@ -4,11 +4,11 @@ const app = express()
 const port = 8080
 
 const pool = new Pool({
-    user: 'postgres',
+    user: 'admin',
     host: 'localhost',
-    database: 'postgres',
-    password: 'postgres',
-    port: 5432,
+    database: 'myWeb_db',
+    password: 'root',
+    port: 5433,
   });
   
   app.use(express.json());
